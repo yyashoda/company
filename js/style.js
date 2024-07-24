@@ -53,6 +53,19 @@ document.addEventListener('DOMContentLoaded', function() {
         newsGallery.appendChild(newsItem);
     });
 });
+// --------------------------about---------------------------//
+
+document.getElementById('learnMoreBtn').addEventListener('click', function() {
+    var dynamicContentSection = document.querySelector('.dynamic-content-section');
+    dynamicContentSection.classList.toggle('d-none');
+    if (!dynamicContentSection.classList.contains('d-none')) {
+        this.textContent = 'Show Less';
+    } else {
+        this.textContent = 'Learn More';
+    }
+});
+
+
 
 // -------------------gallary---------------------//
 document.addEventListener('DOMContentLoaded', function() {
